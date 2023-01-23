@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 
 // Database config
-const connection = require('./config/db.config')
+const connection = require('./config/db')
 connection.once('open', () => console.log('DB Connected'))
 connection.on('error', () => console.log('Error'))
 
